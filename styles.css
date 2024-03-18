@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Set a warm background color */
+}
+
+main {
+    text-align: center; /* Center align all content in the main element */
+}
+
+img {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    max-height: 90vh; /* Set the maximum height to 100% of the viewport height */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center horizontally by setting left and right margins to 'auto' */
+    margin-top: 5em;
+}
+
+.image-subtitle {
+    font-style: italic;
+}
