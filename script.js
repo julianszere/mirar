@@ -33,8 +33,8 @@ class ImageBuilder {
             const subtitle = document.createElement('p');
             subtitle.classList.add('image-subtitle');
             subtitle.textContent = item.subtitle;
-            subtitle.style.textAlign = "right"; // Align text to the right
-            subtitle.style.maxWidth = "80%"; // Set a maximum width (adjust as needed)
+            subtitle.style.textAlign = "right"; 
+            subtitle.style.maxWidth = "80%";
             container.appendChild(subtitle);
         }        
 
@@ -44,13 +44,12 @@ class ImageBuilder {
     static shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+            [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
     }
 }
 
-// Instantiate ImageBuilder when the script is loaded
 window.onload = function() {
     new ImageBuilder();
 };
